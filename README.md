@@ -1,2 +1,2 @@
 # Bash-Scripts-
-Bash scripts that help make my things easier.  
+Bash scripts that help make things easier.  
