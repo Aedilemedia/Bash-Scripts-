@@ -1,0 +1,17 @@
+#!/bash/bin
+
+echo "Hi!  I'm going to help you hash a password."
+echo "                         "
+echo  "Please enter your password so I can start the hashing process." 
+echo  "        "
+echo  "                                      "
+echo  "What is the password you would like to hash"
+read -r password
+echo "                                          "
+echo  echo "$password" | openssl passwd -6 -stdin
+echo  "                                          "
+echo  "Copy and paste the above text and make sure"
+echo  "you enter it into the "userconf.txt" file"
+echo  "Remember the format is 'username':'hased password'"
+echo  "                                                  "
+echo 
