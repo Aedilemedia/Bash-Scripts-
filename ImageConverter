@@ -1,0 +1,20 @@
+#!/bin/bash
+#A simple bash script to convert images with qemu-img 
+#The complete path is required as I've not yet figured how to call
+#to ~ to equal home of the user.
+
+
+echo "This script uses qemu-img to convert images"  
+echo "I use this tool to convert images for kvm"
+echo "sudo qemu-img convert -O vdi input output.vdi"
+
+echo "Please let me know what file you want converted to VDI"
+echo "The input path needs to be in the format of /home/user/location/file"
+read -p "Please Enter Complete Path:" type1
+echo "   "
+echo "Please give me the name and location where the .vdi file will go"
+echo "Make sure to include '.vdi' at the end of the file path" 
+read -p "Please Enter Complete Path:" type2
+echo "  "
+echo "Thank you, the conversion will be done soon"
+sudo qemu-img convert -O vdi "$type1" "$type2"
